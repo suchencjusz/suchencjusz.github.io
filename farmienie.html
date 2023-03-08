@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html
+	class=" js flexbox history draganddrop borderimage textshadow cssanimations localstorage sessionstorage filereader json performance">
+
+<head>
+
+
+	<style>
+		h1 {
+			font-size: 36px;
+		}
+
+		* {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+		}
+
+		.post {
+			margin: 0px 0px 10px 0px;
+			padding: 0px;
+			border: 1px solid #d4d4d4;
+			background-color: #f4f4f4;
+			margin: 50px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.spoiler {
+			margin: 0px 0px 10px 0px;
+			padding: 0px;
+			border: 1px solid #d4d4d4;
+			background-color: #f4f4f4;
+			margin: 50px;
+			padding: 10px;
+			width: 80%;
+			overflow-wrap: break-word;
+		}
+
+		@media only screen and (max-width: 600px) {
+			* {
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 12px;
+			}
+
+			.post {
+				margin: 0px 0px 10px 0px;
+				padding: 0px;
+				border: 1px solid #d4d4d4;
+				background-color: #f4f4f4;
+				margin: 5px;
+				padding: 1px;
+				border-radius: 10px;
+				word-wrap: break-word;
+			}
+	</style>
+
+	<script>
+		function toggle_spoiler(e) { var t = e.parentNode.getElementsByTagName("div")[0].getElementsByTagName("span")[0].style.display; e.parentNode.getElementsByTagName("div")[0].getElementsByTagName("span")[0].style.display = "none" == t ? "block" : "none" }
+	</script>
+
+	<h1>Farmienie</h1>
+
+	<div class="post"><a name="9807"></a>
+		<div class="igmline">
+			<span class="postheader_left">
+				<img src="farmienie_files/591762_thumb.jpg" alt="" class="userimage-tiny">
+				<a href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=info_player&amp;id=848955783"
+					target="_blank">
+					Psych0 - Bucks x Kamiiiru
+				</a> <span class="igmline-date">dnia 06.03.2023 o 20:11</span>
+			</span>
+			<span class="postheader_right">
+
+				<a
+					href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=forum&amp;screenmode=view_thread&amp;thread_id=1365&amp;action=thank_post&amp;post_id=9807&amp;page=0&amp;h=616a33aa&amp;h=616a33aa">Podziękuj</a>
+			</span>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="text"><span style="font-size:8pt"><i>poradniko-wypracowanie by ShadowTouch/ShadowBlackWolf/ten debil
+					który nie wrzuca kolejnego memetage - odświeżone 2021</i></span><br>
+			<br>
+			<table class="vis bbcodetable">
+				<tbody>
+					<tr>
+						<td><span style="color: rgb(85, 0, 0); --darkreader-inline-color: #a4a19b;"
+								data-darkreader-inline-color=""><span style="font-size:8pt"><b>Disclaimer:</b>
+									Nigdy nie byłem królem farmienia, bo po prostu uważam to za nudne.
+									Dzielę się tylko swoimi technicznymi przemyśleniami na temat optymalnych
+									strategii. W tej mechanice jest zaskakująco sporo głębi i trzeba
+									naprawdę się postarać, aby dobrze farmić - nie wystarczy samo klikanie A
+									i B przez dzień i noc. Mimo wszystko siedzenie po nocach i klikanie
+									tych guziczków jest istotnym elementem, dlatego zawsze mnie to męczyło i
+									nigdy się w to nie bawiłem.<br>
+									Weteranów, którzy zjedli sobie zęby na wysyłaniu 1 LK na szare wioski
+									zapraszam do komentowania tego co napisałem i poprawiania mnie, bo nie
+									jestem osobą szczególnie wykwalifikowaną i moje techniczne obliczenia
+									mogą mieć gdzieś luki ;d</span></span></td>
+					</tr>
+				</tbody>
+			</table><br>
+			<b><u>Pierwszy dzień</u></b><br>
+			<br>
+			Okej. To pojawiamy się z tą naszą małą wioseczką na mapie. I zdajemy
+			sobie sprawę, że aby przeżyć będzie trzeba farmić. Jak to robić?<br>
+			Tu pewnie kupa osób urwie się z eko 1/1/1 i wysyłaniem 2 pik 2 miecz na
+			jak największą liczbę wiosek, ale z tym musimy jeszcze poczekać.
+			Farmienie przez pierwszy dzień świata powinno wyglądać zupełnie inaczej
+			niż przez pozostałe. Jest to wypadkowa dwóch czynników:<br>
+			<br>
+			• Szare wioski nie mają jeszcze postawionego eko na 1 poziom, więc <b>przyrost surowców w barbach to
+				zawrotne 5
+				sztuk na godzinę</b>.
+			To prawie tak jakby barby nic nie produkowały - w czasie kiedy nasze
+			miecze zrobią dwustronny kurs na jedno pole (44 minuty), to nasze eko na
+			poziomie 1 wyprodukuje około 4 razy więcej surowców niż mamy szansę
+			przynieść :p<br>
+			• Każda wioska, w tym barby, dostaje 500/500/400 surowców na start.
+			Biorąc pod uwagę schowek na poziomie 1, mamy 350/350/250 do zabrania.<br>
+			<br>
+			Czyli nasza gra powinna się skupiać na <b>jak najszybszym zagrabieniu tych startowych surek z każdej wioski
+				wokół nas</b>.
+			Z samouczka dostajemy 20 pik i 20 mieczy by zrealizować ten cel. To
+			właśnie teraz jest moment, gdy otwieramy pierwszy raz mapę, patrzymy
+			naszą lokalizację i decydujemy o tym co robimy.<br>
+			<br>
+			• Jeżeli mamy jakąś wioskę barbarzyńską zaraz obok siebie (dosłownie jedno pole), to <b>wygraliśmy
+				życie</b>.
+			To znaczy, że całe 950 surki czeka na nas, a szansa że ktoś inny zdąży
+			je zgarnąć przed nami jest niewielka, bo mamy najbliżej. Wysyłamy całe
+			20 pik i 20 mieczy na tę jedną wioskę, najpewniej wrócą z pełnym łupem.
+			Proces powtarzamy jeszcze jeden raz, wysyłając 4 pikomiecza. 24
+			pikomieczy ma 960 ładowności, czyli idealnie by zebrać wszystko. <br>
+			• Jeżeli mamy jakieś wioski barbarzyńskie w odległości max 4 pól od
+			siebie (czyli w swoim kwadracie 7x7), wysyłamy po 10 pikomiecza na każdą
+			z nich. Jest bardzo prawdopodobne że nie będziemy tam pierwsi, ale
+			najpewniej wciąż wrócimy z pełnym łupem, lub przynajmniej połową.<br>
+			• Gdy już wyczyścimy jakąś wioskę to dalej jej nie atakujemy, bo i tak nic tam nie ma.<br>
+			• Jeżeli w swoim kwadracie nie mamy żadnej barbki, lub tylko jedna wygląda gdzieś na samym rogu, mamy
+			przejebane
+			:)<br>
+			<br>
+			Ostatnią opcję z "przejebanym" można naprawić przenosząc wioskę. W zależności od metody jaką startuje Twoja
+			ekipa, możesz mieć <b>od jednej do trzech szans wygrzebania się z gówna</b>:<br>
+			<br>
+			1. Przeniesienie wioski w nowe miejsce.<br>
+			2. Jeśli nie wyszło - zacznij od nowa.<br>
+			3. Jeśli to też nie wyszło - znowu przeniesienie wioski.<br>
+			<br>
+			Dodatkowo, jeżeli jesteś na obrzeżach mapy, jest spora szansa że dołączą
+			nowi gracze i obok Ciebie pojawią się nowe wioski barbarzyńskie.<br>
+			Te można podzielić na te samoistne, które pojawiają się same, oraz te
+			sztuczne, które powstały przez graczy zaczynających od nowa. Obserwujemy
+			cały czas mapę i patrzymy, czy nie pojawiła się nowa wioseczka. Gdy
+			tylko się pojawi, sprawdzamy liczbę punktów.<br>
+			Jeżeli jest najmniejsza możliwa (najczęściej 26, zależy od ustawień
+			świata) - wysyłamy tyle pikomieczy ile tylko możemy, by jak najszybciej
+			zagrabić surowce czekające tam na nas. Jeżeli jest więcej punktów (ponad
+			60) - pamiętamy by jej nie atakować przez najbliższe kilka dni, bo jest
+			to wioska po graczu i mogą tam stać pikomiecze z samouczka.<br>
+			<br>
+			<b><u>Po pierwszym dniu</u></b><br>
+			<br>
+			Tak mniej więcej wygląda pierwszy dzień gry. Dopiero potem zaczyna się
+			zabawa. Wszystkie startowe surowce w barbach wokół zostały już zebrane.
+			Produkcja nowych surowców jest bardzo wolna, nie ma szans że wrócimy z
+			pełnym łupem kiedykolwiek. Dlatego przestaje się liczyć jakość ataków, a
+			przechodzimy na ilość.<br>
+			Zaczyna się to tradycyjne farmienie, które każdy zna i kocha - musimy wysyłać <b>jak najwięcej ataków, jak
+				najmniejszą liczbą jednostek</b>.<br>
+			<br>
+			<b><u>Paczki do farmienia</u></b><br>
+			<br>
+			Więc fajnie, musimy wysyłać dużo ataków, tak żeby były jak najmniejsze.
+			Rzecz w tym, że wszystkie wioski, również te bez muru, mają pewną bazową
+			wartość obrony. Dlatego musimy wysłać na tyle dużo wojska by nie padło,
+			ale też na tyle mało, żeby było to opłacalne. Przygotowałem kilka
+			takich zestawów jednostek, żeby każdy wiedział jakie prawilne szablony w
+			AF ustawić. Potem pozostaje je tylko klikać.<br>
+			<br>
+			<u>Wsie bez murku</u><br>
+			<br>
+			<b>2 pik, 2 miecz</b>: Z tego szablonu będziemy korzystać na samym
+			początku, gdy lecimy tylko na wojsku z samouczka. Jest to minimalna
+			ilość pikomiecza, żeby nic nie padło.<br>
+			<b>1 pik, 1 top</b>: Tego szablonu używamy gdy zaczynamy już robić offa, a toporki stoją nieużywane w
+			wiosce.<br>
+			<b>2 top</b>: Tak jak powyżej, prędzej czy później toporki z offa będą
+			stały w bezruchu, więc można je tak rozsyłać. Ale nie polecam tego, bo
+			taki szablon ma bardzo małą ładowność, a są lepsze rzeczy do robienia ze
+			stojącymi toporami, o nich później.<br>
+			<b>1 LK</b>: Tak, samotny brązowy koń wysłany na wioskę bez murku nie padnie.<br>
+			<br>
+			W żadnym wypadku nie wysyłamy na przykład <b>3 pik, 2 miecz</b> albo <b>4 pik, 2 miecz</b>
+			- wtedy mimo tego że jest więcej wojska niż w paczce, to zacznie ono
+			padać, ze względu na pewną własność algorytmu bitwy. Nie o niej jest
+			poradnik, dlatego po prostu zostańmy na tym, że nigdy nie dokładamy nic
+			do paczek z piechoty; mają być dokładnie takie jak napisano. <br>
+			<br>
+			<u>Wsie z murkiem</u><br>
+			<br>
+			W momencie gdy zaczną się pojawiać pierwsze murki, to zazwyczaj mamy już
+			nieco LK. Dlatego tu już podaję szablony wyłącznie dla LK.<br>
+			<b>4 LK</b> - tyle minimalnie potrzeba, by nic nie padło na murze poziom <b>1</b>.<br>
+			<b>32 LK</b> - tyle minimalnie potrzeba, by nic nie padło na murze poziom <b>2</b>.<br>
+			<b>87 LK</b> - tyle minimalnie potrzeba, by nic nie padło na murze poziom <b>3</b>.<br>
+			<br>
+			<span style="font-size:8pt"><i>* Paczki były liczone dla szczęścia -25%,
+					wobec tego jest kilka nieścisłości. Na przykład na światach z flagami
+					można używać flag szczęścia do zmniejszania paczek. Można też używać
+					różnych "RNG-based" rozwiązań, wysyłając po 2 LK i licząc, że nigdy nie
+					trafimy dużego minusa na szczęściu. Polecam tu już zrobić własne
+					eksperymenty. Dodam jeszcze, że na światach z łucznikami i bez łuczników
+					algorytmy walki są różne - uważajcie na to :&gt;</i></span><br>
+			<br>
+			<b><u>Które wioski farmić</u></b><br>
+			<br>
+			W tym momencie większość graczy zaczęłaby już klasyczne farmienie, czyli
+			rozsyłanie po 2 pikomiecze na wszystkie wioski w okolicy, przez dzień i
+			noc. Tutaj są różne szkoły, ale najczęściej <b>jest to błąd</b>. Odważne stwierdzenie? Spójrzmy na to
+			dokładniej.<br>
+			Barby dalej nie mają wybudowanego eko, więc zyskujemy śmiesznie małe
+			ilości surowców. Farmiąc barby bez eko nie zbierzemy nic sensownego,
+			dlatego w naszym interesie leży by farmić <b>przede wszystkim wioski, które zbudowały kopalnie</b>.<br>
+			<br>
+			Jak to zrobić? Bacznie obserwujemy wzrost punktów wszystkich okolicznych
+			barbek i szukamy tej, która w naszej okolicy wybuduje eko jako
+			pierwsza. Jak poznać czy barbka zrobiła eko? Jeżeli spojrzymy na <a
+				style="color: rgb(64, 64, 208); --darkreader-inline-color: #4066aa;"
+				href="https://www.plemiona.pl/page/redir?u=def50200070d1ee19ae49b9322c300d803e4b61b3e83254de265631e9d482c8bf9162ba1fd7131d06f4d75ef33b5c3f556b28b97c914c256378000125341d495680682a96952b1cb8324560bc103a8245f07edcf0a316c57e522ef5c50283ccb6c0c5ce4be06f0638a4230a0f9921cfba8d816d676c386fd366c9b0246b88dda8163e3ce2ef5affc9e7358f056"
+				target="_blank" referrerpolicy="no-referrer" data-darkreader-inline-color="">tabelę punktów</a>, to
+			zobaczymy, że kopalnie to jedyne z wczesnych budynków które dają przyrost dokładnie <b>6 punktów</b>.
+			Przyglądamy się więc punktom wiosek i patrzymy, czy jakiejś barbce przypadkiem nie skoczył wynik o dokładnie
+			6
+			punktów.<br>
+			<br>
+			Obserwować różnice punktów możemy ręcznie, lub w bardziej finezyjne sposoby, jakimiś <a
+				style="color: rgb(64, 64, 208); --darkreader-inline-color: #4066aa;"
+				href="https://www.plemiona.pl/page/redir?u=def502001f7b1110beee2bebc79391e23d5ded9e110315d3f6933b0eb83141678c2917db90e054964eb2c25abe2c6f9a4aa441432ec0789be13eb654f4496bc44ad3bd5b14ea55a37d6a81b72989e30cda7dda25886795d2aa8c31cd29e0e45a2060bf991c81ade8cd57b621812c9da8c592"
+				target="_blank" referrerpolicy="no-referrer" data-darkreader-inline-color="">ozrełami</a> lub <a
+				style="color: rgb(64, 64, 208); --darkreader-inline-color: #4066aa;"
+				href="https://www.plemiona.pl/page/redir?u=def5020005748cc5e55b89f134f4fb599d63dbcd2c59234dc7b4afe475e1b9e440dd13497fb4354b408bf8158ddb1520dca9104d5d626c7989d3f3e223b2941fe32b86a26b1981dc0cb9dafef4b7ab829f53265eeb975b851ac726e3efb824e5f146a537825dd49ccceda3530a9ae81d92485930047a50e804c8c884446a66bf736f631c"
+				target="_blank" referrerpolicy="no-referrer" data-darkreader-inline-color="">Strażnikami Murków</a>.
+			Dla mniej hardkorowych osób jest jeszcze inna opcja - wystarczy
+			rozesłać ataki na wszystkie wioski i obserwować raporty. Jeżeli gdzieś
+			złupione surowce będą niezbalansowane (czyli 4/1/1 albo 0/0/2, ale nie
+			2/2/2 lub 8/8/8), to znaleźliśmy wioskę z kopalnią.<br>
+			<br>
+			Znaleźliśmy wioskę z eko? No to właśnie wygraliśmy życie. Zaczynamy farmić tę wioskę. Bez przerwy, wysyłamy
+			dosłownie <b>szlaczek ataków na tę jedną wioskę</b>, po 2 pikomiecze co około 15 minut.<br>
+			<br>
+			Dalej obserwujemy inne wioski. Jeżeli jakaś inna wioska też zrobi eko,
+			to również zaczynamy ją męczyć - rozkładamy wtedy męczenie na dwie
+			wioski. Powtarzamy w nieskończoność. Inaczej mówiąc, farmimy tylko te
+			barby, które wybudowały eko.<br>
+			Do reszty barbek bez eko również możemy wstąpić, ale maksymalnie raz na cztery, pięć godzin - najlepiej
+			nocą.<br>
+			<br>
+			Korzystając z tej metody dostaniemy zazwyczaj więcej surowców, niż
+			jakbyśmy farmili wszystkie barbki po równo. W spoilerze dokładniejsza
+			analiza, dla niedowiarków.<br>
+			<br>
+			<div class="spoiler"><input type="button" value="Spoiler" onclick="toggle_spoiler(this)">
+				<div><span style="display:none">Załóżmy cztery wioski w odległościach 1, 2, 3, 4, gdzie wioska odległa o
+						2
+						pola zbudowała tartak na 1 poziom.<br>
+						<br>
+						Weźmy tradycyjny sposób farmienia z AFa, gdzie wysyłamy ataki na
+						wszystkie z tych wiosek, w obie strony. Załóżmy dość optymistycznie, że
+						każdy z naszych ataków przynosi produkcję z 30 minut w każdej z tych
+						wiosek. W ciągu godziny możemy zrobić:<br>
+						1,36 kursów na wioskę odl. 1, z produkcją 5/5/5, każdy z nich zbiera: 2,5/2,5/2,5<br>
+						0,68 kursów na wioskę odl. 2, z produkcją 30/5/5, każdy z nich zbiera: 15/2,5/2,5<br>
+						0,45 kursów na wioskę odl. 3, z produkcją 5/5/5, każdy z nich zbiera: 2,5/2,5/2,5<br>
+						0,34 kursów na wioskę odl. 4, z produkcją 5/5/5, każdy z nich zbiera: 2,5/2,5/2,5<br>
+						Oszczędzę wszystkim liczenia i powiem, że na godzinę dostajemy dodatkowe surowce: <b>około 16
+							drewna, 7 gliny, 7 żelaza</b> - łącznie 30 surowców.<br>
+						<br>
+						Weźmy Szadołowy, niesamowity sposób farmienia, gdzie wysyłamy paczki 2/2
+						na jedną wioskę, tę która zrobiła eko. Załóżmy, że nasz ciąg ataków
+						idzie nieprzerwanie, co 15 minut. Inni mogą wejść atakami przed nami,
+						ale ponieważ nasze ataki są częstsze, to jest na to mniejsza szansa -
+						załóżmy, że 80% produkcji wioski przynosimy do domu.<br>
+						30*0.8 = 24, 5*0.8 = 4<br>
+						Czyli zbieramy na godzinę <b>około 24 drewna, 4 gliny, 4 żelaza</b> - łącznie 32 surowców.<br>
+						<br>
+						Różnica nie wydaje się powalająca, dopóki nie zdamy sobie sprawy, że:<br>
+						• Pierwsze obliczenia zrobiliśmy w naprawdę optymistycznym przypadku.
+						Wiele z ataków będzie wracało pustych. Metoda z męczeniem jednej wioski
+						nie ma takiego problemu, bo ataki są na tyle częste, że zgarniamy
+						zdecydowaną większość produkcji.<br>
+						• To w ciągu godziny. W przeliczeniu na dzień wychodzi nam 720 vs 768,
+						czyli tak jakbyśmy w ciągu dnia dostali dodatkową godzinę z hakiem
+						farmienia. Za tyle surki to sobie można życie od nowa ułożyć.<br>
+						• Im więcej wiosek z eko farmimy w ten sposób, tym większa zrobi się różnica.</span></div>
+			</div><br>
+			Jest jednak kilka wad tego schematu postępowania:<br>
+			<br>
+			• Metoda <b>jest ryzykowna, wkładamy wszystkie jajka do jednego koszyka</b>.
+			Jeżeli dwóch sąsiadów gra w ten sam sposób, to możemy zapomnieć o
+			przynoszeniu większości produkcji barby z eko. Jeżeli więcej niż dwóch,
+			to będzie przejebane. Szczególnie to będzie widoczne, kiedy całe plemię
+			zacznie w kupie i wszyscy będą chcieli korzystać z tego poradnika na
+			ślepo, bez większego pomyślunku :D<br>
+			• Nasz dochód surowców z farmy będzie bardzo niezbalansowany, bo
+			będziemy zbierać surkę głównie z jednej wybudowanej kopalni. Inaczej
+			mówiąc do domu będziemy przynosić albo samo drewno, albo samą glinę,
+			albo samo żelazo. Możemy sprytnie żonglować surowcami za pomocą rynku,
+			ale wciąż będzie z tym kupa zabawy.<br>
+			<br>
+			W obliczu tych problemów czasem będzie opłacalniej przerzucić się na
+			klasyczną taktykę farmienia wszystkich wiosek w okolicy, również tych
+			bez eko. Ta jest delikatnie mniej efektywna, ale bardziej neutralna i
+			stabilna.<br>
+			<br>
+			Im dłużej gramy, tym więcej wiosek będzie już miało eko - aż dojdziemy
+			do momentu, gdy każda barba wybuduje swoje kopalnie. Zazwyczaj trwa to
+			około dwóch, trzech dni. Wtedy już możemy na ślepo <b>farmić całą okolicę</b>, jak najczęściej rozsyłając
+			ataki
+			na wszystkie najbliższe wioski.<br>
+			Nie będę mówił jak bardzo najbliższe, bo szkoły są różne - ja wysyłałem
+			zawsze wojska na maksymalnie 1h drogi w jedną stronę, priorytetyzując
+			wioski najbliższe. Są ludzie którzy farmią nawet do trzech, czterech
+			godzin w jedną stronę. Tutaj wybór strategii pozostawiam już Wam.<br>
+			<br>
+			<b><u>Rozbudowa wioski</u></b><br>
+			<br>
+			<span style="font-size:8pt"><span style="color: red; --darkreader-inline-color: #cc1515;"
+					data-darkreader-inline-color=""><i>* Uwaga, ta część
+						jest nieaktualna, bo w grze jest już nowy system zadań. Nie chce mi się
+						tego wszystkiego poprawiać... zresztą nawet nie mogę, bo nie grałem
+						jeszcze żadnego świata pod farmę z nowym samouczkiem xd</i></span></span><br>
+			<br>
+			Zdobywamy surowce. No to co z nimi robić? Naszym głównym celem od początku gry powinno być <b>wybudowanie
+				stajni
+				na 3 poziom</b>.
+			Dlaczego? Prosta sprawa, trzeba mieć LK. Jest to jednostka wręcz
+			stworzona do farmienia, przemieszcza się ponad dwa razy szybciej niż
+			pikomiecz i może dużo unieść. Rushowanie stajni to podstawa każdego
+			świata z farmą.<br>
+			<br>
+			Naturalnie nie należy wspominać, że w naszej pierwszej wiosce <b>gramy offem i tylko offem</b>. Jeżeli na
+			świecie z farmą nie jesteś offowcem, to znaczy, że nie bierzesz go na poważnie :D<br>
+			Wiadomo, można robić tylko deff i LK (sam tak będę grać, bo jestem
+			warzywo). Ale tak jak powiedziałem - nie będzie to poważna gra.<br>
+			<br>
+			No to jak iść w tę stajnię w takim razie? Dobre pytanie. Na początku
+			zadajmy sobie pytanie, jakie robić eko? Tu mogą się niektórzy urwać i
+			powiedzieć, że 1/1/1. Tak robiło się dawno temu, na pierwszych światach,
+			gdzie dobrze farmić potrafiło może 1% graczy.<br>
+			W dzisiejszych czasach mamy samouczek, więc byłoby to trochę bez sensu -
+			na samym początku robimy wszystkie zadania (oprócz 40 pik oczywiście) i
+			zbieramy nagrody. Przerywamy na zadaniu z ratuszem 7 i koszarami 5. Po
+			tym będziemy mieli eko 5/5/3, około 1500 sztuk każdego surowca w
+			spichlerzu, a do stajni będzie nas dzielić 5 poziomów ratusza, 2 koszar i
+			4 kuźni.<br>
+			<br>
+			<b>(ważne, bo zapomniałem dopisać - to świat ze zbieractwem, zatem warto
+				jest również zrobić zadanie na 40 pików, nie tylko zwróci się surka,
+				ale jeszcze wpada AF za darmo i mamy wojsko do zbieractwa)</b><br>
+			<br>
+			<span style="font-size:8pt"><i>* Tutaj ważne jest by zauważyć różnicę
+					między "opłaca się" a "zwracają się surowce". Tak, misja na piki zwraca
+					się na każdym świecie z farmieniem. Jednak piki będą stać nieużywane, bo
+					nie możemy wysyłać nimi farmy - będą padać. Czy zrobienie tych pików
+					jest więc warte opóźniania swojego eko o kilka godzin? Obliczcie i
+					sprawdźcie sami ;)</i></span><br>
+			<br>
+			Ci odważniejsi mogą chcieć iść już w stajnię. Jeżeli czujesz się
+			wybrańcem i trafiłeś naprawdę kozacką okolicę, typu 8 barb w kwadracie i
+			3 z nich zaraz obok siebie, to możesz próbować. Ja to odradzam,
+			niezależnie od okolicy. W dzisiejszych czasach mamy zdecydowanie więcej
+			dobrych farmerów, z którymi będziemy musieli dzielić władzę nad naszym
+			kwadratem, więc surowce z eko są dość istotne. Ja przed pójściem w
+			stajnię zalecam podciągnięcie eko do minimum 9/9/9 (opcja zajebiście
+			agresywna), a najlepiej do 10/10/10 (opcja w miarę stabilna) - za
+			surowce z samouczka idzie to naprawdę szybko.<br>
+			<br>
+			Oto numerycznie wyliczona najszybsza droga do osiągnięcia takiego
+			poziomu kopalni. Klękajcie przed jej blaskiem, bo musiałem liczyć ją w
+			bólach na swoim kompie przez godzinę, sprawdzając wszystkie możliwości.<br>
+			<br>
+			<span style="font-size:8pt"><i>* Tutaj notka - Zygmek mówi że szablon
+					jest niepoprawny, ale do tej pory nie wskazał błędu ani nie podał
+					kontrprzykładu, mimo że prosiłem go wielokrotnie, a sam wstawiłem dowód
+					poprawności. Wobec tego uznaję, że mój szablon jest najlepszy, bo po
+					prostu nie istnieje żaden inny ;d</i></span><br>
+			<br>
+			<div class="spoiler"><input type="button" value="Spoiler" onclick="toggle_spoiler(this)">
+				<div><span style="display: block;">Cegielnia 6<br>
+						Tartak 6<br>
+						Cegielnia 7<br>
+						Cegielnia 8<br>
+						Cegielnia 9<br>
+						Tartak 7<br>
+						Tartak 8<br>
+						Tartak 9<br>
+						Huta 4<br>
+						Tartak 10<br>
+						Huta 5<br>
+						Cegielnia 10<br>
+						Huta 6<br>
+						Huta 7<br>
+						Huta 8<br>
+						Huta 9<br>
+						Huta 10</span></div>
+			</div><br>
+			Jeżeli nie farmimy, czas budowy to 1 dni i 13 godzin. Farmiąc
+			przeciętnie możemy zjechać poniżej jednego dnia. Farmiąc bardzo dobrze
+			można wyrobić się w pół dnia. Jeżeli idzie nam naprawdę słabo z
+			farmieniem, to w ostateczności uruchamiamy bonus 10% spichlerza z
+			inwentarza.<br>
+			Jeśli wybierasz agresywną opcję z eko 9/9/9 to po prostu wywal z listy wszystkie dziesiąte poziomy, plan
+			będzie
+			dalej optymalny.<br>
+			<br>
+			Po wbiciu eko idziemy w stajnię, budujemy budynki do niej potrzebne,
+			kolejność jest tu raczej nieistotna. Stawiamy stajnię, badamy zwiad i
+			odbieramy nagrodę z samouczka. Kiedy już masz zwiad możesz rozesłać go
+			po jednej sztuce na wszystkie wioski barbarzyńskie w swojej okolicy, by
+			na zaś zebrać informacje, które przydadzą się później.<br>
+			Ciągniemy stajnię na 3 poziom, samouczek obdaruje nas za to 5 LK.
+			Natychmiast zaczynamy nimi farmić i już nigdy nie przerywamy. Podnosimy
+			spichlerz i zbieramy surkę na badanie LK. Po podniesieniu spichlerza
+			odpalamy bonus surowców z inwentarza, jeżeli jeszcze tego nie zrobiliśmy
+			wcześniej - to najlepszy moment na to. Kiedy już skończymy badanie,
+			rekrutujemy tylko i wyłącznie LK. <br>
+			<br>
+			Dostajemy dzięki temu trzy zadania z samouczka, z wypaśnymi nagrodami.
+			Oczywiście wykonujemy, odbieramy i wydajemy je jak najszybciej na LK:<br>
+			- Wyprodukowanie 10 lekkich, nagroda: <b>400/400/600</b>.<br>
+			- Wyprodukowanie 20 lekkich i zrabowanie 20 wiosek, nagroda: <b>2000/2000/2000</b>.<br>
+			- Zdobądź brązowego grabieżcę, nagroda: <b>2500/2500/2000</b> (ta misja
+			prawdopodobnie wykona się sama, bo po 3 dniach gry na 100% wbiłeś już
+			brązowego grabieżcę - jeśli nie, to nie grasz poważnie)<br>
+			<br>
+			Dążymy do tego, by kolejka rekrutacji LK nigdy się nie przerwała. W
+			razie czego podnosimy troszkę rynek (max 3 poziom) i wymieniamy surowce z
+			noobkami, którzy jeszcze nie mają stajni i sprzedają żelazo. <br>
+			Przyzwyczajaj się też do koczowania na rynku, by skupić każdy kawałek
+			żelaza jaki tam się pojawi. Im więcej osób postawi stajnię, tym trudniej
+			będzie dostać żelazo na rynku. Ja zwykłem odpalać sobie rynek na drugim
+			monitorze, wraz z wtyczką do Chrome do automatycznego odświeżania
+			strony, by mieć zawsze na niego oko.<br>
+			<br>
+			Od tego momentu już nie ma sensu tłumaczyć jak dalej budować wioskę, bo
+			są różni gracze i różne pomysły. Kilka z możliwych opcji to:<br>
+			<br>
+			• Nie budować wioski ani offa wcale, tylko pchać wszystko w opór na
+			produkcję LK. Są takie pojeby jak Kmicic, które zamiast offa robiły 4k
+			LK w pierwszej wiosce.<br>
+			• Zbadać topory i rozpocząć produkcję ofedronu, żeby mieć czym czyścić graczy po zejściu ochronki.<br>
+			• Podnieść sobie trochę wyżej eko - im szybciej tym lepiej, mamy też wtedy zabezpieczenie w wypadku straty
+			offa.<br>
+			• Lub iść jak najszybciej w warsztat, bo zbliża się ten moment, którego wszyscy nienawidzą.<br>
+			<br>
+			<u><b>Murki w barbach</b></u><br>
+			<br>
+			Pierwsze stajnie i koniec ochrony to moment, w którym niektóre z barbek
+			mogą posiadać już mur. Mury są naturalnie złe dla nas, bo wtedy nasze
+			dzielne oddziały 1 LK zaczynają umierać, a tego nie chcemy.<br>
+			Wobec tego musimy pilnować swojej okolicy - tu wkracza do akcji zwiad,
+			który dostaliśmy przy okazji wykonywania zadań z samouczka. Regularnie
+			skanujemy wszystkie barby które farmimy i obserwujemy ich zabudowę. Aby
+			barba zbudowała mur, w wiosce <b>muszą stać koszary</b>. Zatem jeżeli widzimy gdzieś koszary to zaczynamy
+			szczególnie uważać, bo niedługo też się pojawi murek.<br>
+			<br>
+			Co gdy pojawi się już murek? Musimy go zburzyć. Oczywiście przez jakiś
+			czas nie będzie wchodziło to w grę, bo nie mamy warsztatu. Wtedy po
+			prostu omijamy takie wioski z daleka, wysyłamy na nie tylko zwiad raz na
+			jakiś czas. Dlaczego zwiad? Wioski z murkami mają tendencję do
+			gromadzenia sporej ilości surowców, bo każdy je omija. Jeżeli widzimy,
+			że w wiosce siedzi kupa surki, to warto już wysłać tych 4 LK w wypadku
+			muru 1, a w przypadku wyższych murków wysłać piechotę i pogodzić się z
+			niewielkimi stratami.<br>
+			<br>
+			Gdy już dojdziemy do taranów, zaczynamy burzyć murki w swojej okolicy.
+			Musimy oczywiście wysłać na tyle dużo wojska, by nic nie padło, ale na
+			tyle mało, by być maksymalnie efektywnym. Oto standardowe paczki do
+			burzenia murów:<br>
+			<br>
+			Mur poziom 1 - <b>1 LK, 3 tar</b> lub <b>3 top, 3 tar</b><br>
+			Mur poziom 2 - <b>4 LK, 4 tar</b> lub <b>135 top, 4 tar</b>. Tak, to nie
+			jest pomyłka, aż 135 toporów - dziwactwa algorytmu bitwy znowu w nas
+			uderzają, dlatego lepiej używać tutaj LK. Jeżeli zaakceptujemy że jeden
+			toporek nam padnie, to można wysłać <b>15 top, 4 tar</b>.<br>
+			Mur poziom 3 - <b>7 LK, 8 tar</b> lub <b>135 top, 8 tar</b>. Jeżeli przebolejemy stratę jednego toporka -
+			<b>21
+				top, 8 tar</b>.<br>
+			Mur poziom 4 - <b>32 LK, 10 tar</b> lub <b>1081 top, 10 tar</b> (iks kurwa de). Jeżeli przebolejemy stratę
+			jednego toporka - <b>119 top, 10 tar</b>. Jeżeli przebolejemy stratę dwóch - <b>48 top, 10 tar</b>.<br>
+			<br>
+			Gdy dorobimy się już katasów, warto zrobić kilka i burzyć nimi koszary w
+			barbach, żeby za szybko nie odbudowały muru. Oto paczki z katasami.
+			Jeżeli nie ma koszar, celujemy kataskami w ratusz, żeby za szybko nie
+			odbudowały się koszary (one wymagają ratusza lv 3). Po takim zabiegu
+			mamy przynajmniej kolejne kilka dni spokoju.<br>
+			<br>
+			Mur poziom 1 - <b>3 tar, 2 kat</b>.<br>
+			Mur poziom 2 - <b>4 tar, 9 kat</b>.<br>
+			Mur poziom 3 - <b>8 tar, 9 kat</b>.<br>
+			Mur poziom 4 - <b>8 LK, 10 tar, 9 kat</b>.<br>
+			<br>
+			Pobawienie się symulatorem i wymyślenie innych paczuszek pozostawiam jako proste ćwiczenie dla czytelnika
+			;p<br>
+			<br>
+			<u><b>Farmienie graczy</b></u><br>
+			<br>
+			Dzień zejścia ochrony początkowej u pobliskich graczy jest ważny, ponieważ kończy im się wtedy ochrona
+			początkowa.<i> - Szadoł Coelho</i><br>
+			A to oznacza, że możemy ich atakować. W swojej okolicy znajdziesz przede wszystkim trzy rodzaje graczy:<br>
+			<br>
+			• Gracze-noobki poniżej 60 punktów, którzy założyli konta i zniknęli na
+			samym początku gry. Ich spichlerze będą pełne i to idealny moment, żeby
+			zebrać z nich wszystko. Tutaj dosłownie należy wyczekiwać na koniec ich
+			ochrony początkowej, a potem atakować w ciemno natychmiast gdy zejdzie,
+			bo każdy się rzuci na łatwą surkę.<br>
+			• Gracze poniżej 300 punktów. Z tymi jest trochę trudniej, bo
+			prawdopodobnie zrobili trochę zadań z samouczka i stoi u nich
+			przynajmniej 20 pikomiecza w wiosce. Nie mają jeszcze stajni, więc
+			wystarczy wysłać 5 skanu, zobaczyć co stoi, ile potencjalnie surki
+			możemy zgarnąć, oraz ile możemy zyskać długoterminowo, czyli jakie są
+			poziomy kopalni. Na podstawie tego podejmujemy decyzję o ataku,
+			ewentualnie koczujemy zwiadem, czekamy aż ktoś wyczyści wieś za nas i
+			wtedy ją farmimy.<br>
+			• Gracze powyżej 300 punktów. Byli w stanie zrobić stajnię przed
+			zakończeniem ochrony, co oznacza, że coś tam mają w głowie. Odebrali
+			zwiad z samouczka, dlatego żeby uniknąć bezsensownych strat skanujemy
+			dopiero, gdy zrobimy więcej zwiadu.<br>
+			<br>
+			Dodam, że na współczesnych światach zbuffowano trochę zwiad w obronie.
+			Kiedyś trzeba było mieć dwa razy więcej zwiadu niż agresor, żeby
+			zatrzymać skan, czyli aby zabić 10 zwiadu należało mieć w obronie 20.
+			Dzisiaj stosunek jest 1:1, czyli trzeba 10 zwiadu w obronie aby zabić 10
+			zwiadu u agresora. Dlatego nie atakujemy graczy ze stajnią dopóki nie
+			zrobimy większej ilości skanu, minimum 50.<br>
+			<br>
+			Graczy, których udało nam się wyczyścić, regularnie farmimy. To właśnie <b>farmienie graczy przynosi
+				największe
+				przychody w early i midgame</b>.
+			AF nie działa na graczy i słabiakom nie chce się tego ogarniać, przez
+			co mamy o wiele mniejszą konkurencję niż w przypadku barbek. Farmić
+			graczy możemy "z palca", bądź możemy używać klasyga ze skryptoteki,
+			który jest tam chyba od pierwszych światów.<br>
+			<br>
+			<div class="spoiler"><input type="button" value="Spoiler" onclick="toggle_spoiler(this)">
+				<div><span style="display: block;">
+						<pre
+							style="position: relative;  overflow-wrap: break-word;">javascript:coords='Tu wpisz coordy';var doc=document;if(window.frames.length&gt;0)doc=window.main.document;url=doc.URL;if(url.indexOf('screen=place')==-1)alert('Najpierw wejdz na plac skad masz wysylac czujki');coords=coords.split(" ");index=0;pomocookie=document.cookie.match('(^|;) ?pomo=([^;]*)(;|$)');if(pomocookie!=null)index=parseInt(pomocookie[2]);if(index&gt;=coords.length)alert('To ostatnia wioska');if(index&gt;=coords.length)index=0;coords=coords[index];coords=coords.split("|");index=index+1;cookie_date=new Date(2029,11,11);document.cookie ="pomo="+index+";expires="+cookie_date.toGMTString ();doc.forms[0].x.value=coords[0];doc.forms[0].y.value=coords[1];doc.forms[0].light.value=10;doc.forms[0].axe.value=20;doc.forms[0].spy.value=1;doc.forms[0];javascript:document.forms[0]()  <div class="open_grepper_editor" data-title="Edit &amp; Save To Grepper"></div></pre>
+					</span></div>
+			</div><br>
+			W miejscu <i>Tu wpisz coordy</i> wpisujemy oczywiście koordynaty farmionych wiosek, oddzielone spacją. W tej
+			sekcji:
+			<pre
+				style="position: relative;">doc.forms[0].light.value=10;doc.forms[0].axe.value=20;doc.forms[0].spy.value=1<div class="open_grepper_editor" data-title="Edit &amp; Save To Grepper"></div></pre>
+			podmieniamy
+			jednostki jakie będą wysyłane; 20 to topory, 10 to LK, 1 to zwiad -
+			ustawiamy według własnych preferencji. Dajemy to do paska, najlepiej pod
+			skrótem klawiszowym. Przechodzimy do placu, uruchamiamy skrypt,
+			wciskamy Enter i potwierdzamy atak. Powtarzamy proces dopóki nie
+			przelecimy wszystkich wiosek.<br>
+			<br>
+			Ogólnie utarło się, że do farmienia graczy używamy głównie toporów, bo najczęściej stoją w wiosce i się
+			marnują.<br>
+			Pamiętajmy też o ustawieniach świata. Jeżeli na świecie są włączeni
+			chłopi, to tym bardziej powinniśmy używać toporów, by jakaś wojownicza
+			farma nie ubiła nam kupy koni. Tym bardziej wojowniczym można przygasić
+			zapał burząc murek i zagrodę. Jeżeli to nie pomaga, zostawiamy ich w
+			spokoju - są inne, bardziej ekonomiczne cele.<br>
+			<br>
+			<u><b>I co dalej?</b></u><br>
+			<br>
+			Na zakończenie czas na zlepek kilku losowych przemyśleń. Jedno z pytań,
+			jakie może zadać niedoświadczony gracz, to: "Kiedy zmienić paczki z 1 LK
+			na jakieś większe".<br>
+			<br>
+			Jeżeli interesuje nas bycie profesjonalnymi, perfekcyjnymi farmerami, to odpowiedź brzmi <b>nigdy</b>.
+			W farmieniu liczy się ilość, a nie jakość ataków. Po co wysyłać po 4 LK
+			na wioskę co 20 minut, skoro zamiast tego możemy wysyłać po 1 LK co 5
+			minut? Zwiększanie paczek brzmi po prostu jak gorsza opcja.<br>
+			<br>
+			Natomiast jeżeli nie chcemy być profesjonalnymi, perfekcyjnymi
+			farmerami, możemy pomyśleć o zwiększeniu paczki. Po pierwsze, jeżeli nie
+			będziemy tryhardować i rozsyłać wojska bez przerwy po 1 LK, będzie nam
+			ono zalegać w wiosce. Lepiej już wysłać większe paczki, niż jakby połowa
+			LK miałaby się marnować. Poza tym, jeżeli wysyłamy po 4 LK, to
+			przestaje być dla nas straszny pierwszy poziom muru. Wtedy pilnowanie
+			murków robi się bajecznie proste, wystarczy tylko raz dziennie z samego
+			rana rozesłać paczki z taranami na barby, a potem farmimy po 4 LK. Gdy
+			jakaś barba odbuduje mur to nic się nie dzieje, zburzymy go następnego
+			ranka.<br>
+			<br>
+			Zatem dyplomatyczna odpowiedź na to pytanie brzmi - zwiększyć paczkę
+			należy gdy robimy się zbyt leniwi, słanie po 1 LK i pilnowanie murków
+			wyłazi nam już uszami, oraz chcemy ułatwić sobie trochę życie :D<br>
+			<br>
+			Jak długo się farmi? Jeżeli interesuje nas bycie profesjonalnymi, perfekcyjnymi farmerami, to odpowiedź
+			brzmi
+			<b>zawsze</b>, dopóki mamy barby na świecie. Po co przestawać farmić, skoro zamiast tego można nie
+			przestawać?
+			;o<br>
+			<br>
+			Jeżeli nie chcemy być profesjonalistami, możemy skręcić trochę kurek
+			tryhardu w późniejszej części gry. W pełni rozbudowana wioska z eko 30
+			sama potrafi utrzymać rekrutację, a farmienie jest wtedy tylko dla monet
+			lub rozwijania barb - na tym etapie wielu osobom już się po prostu nie
+			chce.<br>
+			Jak zluzować majty z farmieniem? Możemy zwiększyć paczki nawet do
+			kilkudziesięciu LK, rozsyłać farmę kilka razy na dzień lub raz dziennie
+			zamiast 24/7, robić trochę rzadziej nocki, <b>byle tylko nie przestawać farmić całkowicie</b>.<br>
+			No chyba że tryhardujemy i idziemy po topkę, wtedy nie ma mowy o
+			jakimkolwiek przykręcaniu kurka, a co dopiero mówić o jakimś świeżym
+			powietrzu, albo wychodzeniu z domu.<br>
+			<br>
+			W późniejszym etapie gry, nawet do kilkuset wiosek, powinno się farmić
+			raz na jakiś czas od niechcenia, na przykład raz dziennie, wysyłając
+			większe ilości LK (przykładowo od 50 do 100) na wszystkie okoliczne
+			barbki. Kosztuje nas to może kilka minut dziennie, a potrafi przynieść
+			naprawdę sporo surki.<br>
+			Można też farmić z użyciem CK, ale przecież nikt tego nie będzie robił.
+			Nie będziecie kisić deffa tylko po to żeby nim farmić, prawda? ;&gt;<br>
+			<br>
+			Tak jak wspominałem, liczy się ilość ataków, nie jakość. Dlatego
+			korzystając z AF włączamy pokazywanie wiosek, na które idą ataki. Bez
+			tej opcji możemy mieć jednocześnie wysłany maksymalnie jeden atak na
+			każdą wioskę, a to jest za mało. Jedyny problem jest wtedy taki, że
+			kolejne rekordy w AF nie będą się wtedy przesuwać automatycznie i trzeba
+			ruszać myszką, a to jest niewygodne. Na szczęście można to naprawić
+			skrypciorem ze skryptoteki.<br>
+			<br>
+			<div class="spoiler"><input type="button" value="Spoiler" onclick="toggle_spoiler(this)">
+				<div><span style="display:none">
+						<pre
+							style="position: relative;">javascript: $.getScript("https://media.innogamescdn.com/com_DS_PL/skrypty/pomocnik_asystenta_farmienia.js"); void(0);<div class="open_grepper_editor" data-title="Edit &amp; Save To Grepper"></div></pre>
+					</span></div>
+			</div><br>
+			W skryptotece jest jeszcze jeden skrypt, który ma ułatwiać ogarnianie
+			murków w barbach. Ja go nigdy nie używałem, ale może komuś innemu się
+			spodoba. Zamienia on ikonkę placu przy wioskach w AF tak, że
+			automatycznie wypełnia szablon z taranami do zburzenia muru. Dzięki temu
+			łatwo możemy z AF wysłać burzenie. Oprócz tego potrafi ukrywać
+			wszystkie wioski bez murków dla wygody, oraz ukrywać wioski gdy już
+			wyślemy burzaka.<br>
+			<br>
+			<div class="spoiler"><input type="button" value="Spoiler" onclick="toggle_spoiler(this)">
+				<div><span style="display:none">
+						<pre style="position: relative;">javascript: var ustawienia = [
+//Ukrywanie wiosek bez murków do zbicia (true/false);
+ukrywanie_pozostalych = true,
+//Ukrywanie wiosek po kliknięciu w link do placu (true/false);
+ukrywanie_po_kliknieciu = true,
+//szablony na dane poziomy murków
+szablony = {
+1: {"toporki" : 0, "zwiad":0, "lekka": 1, "taran":3},
+2: {"toporki" : 0, "zwiad":0, "lekka": 4, "taran":4},
+3: {"toporki" : 0, "zwiad":0, "lekka": 7, "taran":8},
+4: {"toporki" : 0, "zwiad":0, "lekka": 32, "taran":10},
+5: {"toporki" : 32, "zwiad":0, "lekka": 32, "taran":20},
+6: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+7: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+8: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+9: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+10: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+11: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+12: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+13: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+14: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+15: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+16: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+17: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+18: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+19: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0},
+20: {"toporki" : 0, "zwiad":0, "lekka": 0, "taran":0}
+}];
+
+// DO NOT EDIT BELOW //
+if (game_data.screen == 'am_farm') {
+var lista = $('#plunder_list') [0].rows;
+$.each(lista, function (i) {
+  if (i &lt; 2) {
+	return
+  };
+  var murek = Number(lista[i].cells[6].innerHTML) || 0
+  if (murek &gt; 0) {
+	var dane = {
+	  target_village_id: lista[i].cells[11].getElementsByTagName('a') [0].href.split('target=') [1],
+	  from: 'simulator',
+	  att_axe: szablony[murek]['toporki'],
+	  att_spy: szablony[murek]['zwiad'],
+	  att_light: szablony[murek]['lekka'],
+	  att_ram: szablony[murek]['taran']
+	}
+	lista[i].cells[11].getElementsByTagName('a') [0].removeAttribute('onclick');
+	lista[i].cells[11].getElementsByTagName('a') [0].href += $.param(dane);
+	lista[i].cells[11].getElementsByTagName('a') [0].onclick = function (event) {
+	  if (!event.ctrlKey &amp;&amp; !event.shiftKey) {
+		event.preventDefault();
+		CommandPopup.openRallyPoint(dane)
+	  }
+	  if (ukrywanie_po_kliknieciu) {
+		javascript: this.closest('tr').style.display = 'none'
+	  }
+	}
+  } else {
+	if (ukrywanie_pozostalych) {
+	  lista[i].style.display = 'none';
+	}
+  }
+})
+}<div class="open_grepper_editor" data-title="Edit &amp; Save To Grepper"></div></pre>
+					</span></div>
+			</div><br>
+			To wszystkie skrypty ze skryptoteki, które dotyczą AF-a. Jeśli chcecie,
+			możecie używać tych innych swoich Andrzejów, których macie pochowane od
+			cholery, ale to już na własną odpowiedzialność.<br>
+			Powiem tylko, że naklepanie skryptu który automatycznie klika guziczki w
+			AF byłoby prostym zadaniem nawet dla słabo rozgarniętego programisty,
+			znalezienie autoclickera w necie jest jeszcze prostsze, a w razie czego
+			można do problemu podejść <a style="color: rgb(64, 64, 208); --darkreader-inline-color: #4066aa;"
+				href="https://www.plemiona.pl/page/redir?u=def502007937abbb179296d19b880fd8b783c17729c7ed903a4ef480a0f4d95c5f827df29091eabf193b7f7990f1a0a13f603f2a13510a2f6f9a16a5eb6ab7e24685498acfad17f2dfe26a0df37c51a4aea570c546b99e1fb6a278633a29a1641aa4e66efa1a6e80211f18af43123cd5143d5e4df013d4a272abf415f4e5dc"
+				target="_blank" referrerpolicy="no-referrer" data-darkreader-inline-color="">tak jak ja, jeszcze
+				bardziej
+				innowacyjnie</a> :D<br>
+			<br>
+			Dziękuję za uwagę (ktoś to przeczytał w całości?) i pozdrawiam wszystkich :*<br>
+			<i>~ Chory pojeb Szadoł</i>
+		</div>
+
+		<!-- Begin Thank -->
+		<div class="post_thanks">
+			<div class="thanksnum">5 graczy podziękowało za ten post. (<a href="#">Pokaż</a>)</div>
+			<a href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=forum&amp;screenmode=view_thread&amp;thread_id=1365&amp;action=thank_post&amp;post_id=9807&amp;page=0&amp;h=616a33aa&amp;h=616a33aa"
+				style="float:right;">Podziękuj</a>
+			<div class="post_thanks_who">
+				<a href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=info_player&amp;id=849064496"
+					data-title="Psychiatryk v2">skandynawsky</a> (dnia 06.03. o 20:26:21), <a
+					href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=info_player&amp;id=849066631"
+					data-title="Psychiatryk v2">PaulinaNuta</a> (dnia 06.03. o 20:31:42), <a
+					href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=info_player&amp;id=8701819"
+					data-title="Psychiatryk v2">olek0123456789</a> (dnia 06.03. o 20:56:57), <a
+					href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=info_player&amp;id=75697"
+					data-title="Psychiatryk v2">HulaGirl</a> (dnia 06.03. o 21:47:42), <a
+					href="https://pl187.plemiona.pl/game.php?village=13836&amp;screen=info_player&amp;id=7305789"
+					data-title="Psychiatryk v2">skn11</a> (dnia 06.03. o 22:14:22)
+			</div>
+
+		</div>
+		<!-- Thank End -->
+
+	</div>
